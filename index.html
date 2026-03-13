@@ -3,25 +3,23 @@
 <head>
 <title>College Chatbot</title>
 </head>
+
 <body>
 
 <h2>College Help Chatbot</h2>
 
-<input id="userInput" placeholder="Ask a question">
-<button onclick="send()">Send</button>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 
-<p id="response"></p>
-
-<script>
-function send() {
-  let input = document.getElementById("userInput").value;
-  document.getElementById("response").innerText =
-  <iframe height="430" width="350" src="https://bot.dialogflow.com/8072eaba-1759-490d-8ae0-30fa77f3c602"></iframe>
-}
-</script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="CollegeBot"
+  agent-id="8072eaba-1759-490d-8ae0-30fa77f3c602"
+  language-code="en">
+</df-messenger>
 
 </body>
-</html>
+</html
+
 
 
 
